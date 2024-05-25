@@ -1,0 +1,49 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large"></ion-title>
+      <ion-img src="assets/logo.png"/>
+   </ion-toolbar>
+  </ion-header> 
+
+  <div id="container">
+    <!-- <p>Toda la informacion del pais que desees a tu disposicion.<a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"></a></p> -->
+  </div>
+
+</ion-content>
+<ion-footer>
+
+  <div id="botones">
+    <div id="boton_inicio">
+      <ion-button 
+      color="primary" 
+      size="large" 
+      shape="round"
+      [routerLink]="['/paises']">Iniciar sesion</ion-button>
+    </div>
+    <div id="boton_registro">
+      <ion-button 
+      color="primary" 
+      size="large" 
+      shape="round" 
+      [routerLink]="['/register']">Registrate</ion-button>
+    </div>
+  </div>
+</ion-footer>
+
+<form action="">
+  <div>
+    <input type="text" placeholder="Email" formControlName="Email">
+  </div>
+  <div>
+    <input type="password" placeholder="password" formControlName="password">
+  </div>
+  <div>
+
+  </div>
+</form>
+
+<!-- Borrar la carpeta node_modules -->
+
+
