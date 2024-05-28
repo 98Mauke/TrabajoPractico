@@ -1,27 +1,68 @@
+#title{
+  justify-content: center;
+  background-color: #1b253b;
+}
+
+#imag{
+  background-color: #1b253b;
+
+}
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  // transform: translateY(-50%);
+  background-color: #1b253b;
 }
 
-#container strong {
+#mail{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 350px;
+  padding: 8px;
+  background-color: #1b253b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   font-size: 20px;
-  line-height: 26px;
+  color: #333
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+#mail:focus {
+  border-color: #66afe9;         /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
+  outline: none;             /* Quitar el outline predeterminado */
 }
-
-#container a {
-  text-decoration: none;
+#password{
+  margin-bottom: 15px;
+  width: 350px;
+  padding: 8px;
+  background-color: #1b253b;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  color: #333
+}
+#password:focus{
+  border-color: #66afe9;         /* Color del borde al enfocar */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
+  outline: none;        
+}
+#boton_inicio {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 130px;
+}
+#texto{
+  color: #616161
+}
+#boton_registro {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 110px;
 }
