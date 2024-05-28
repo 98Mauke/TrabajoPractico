@@ -1,11 +1,17 @@
 
-<ion-content [fullscreen]="true" >
+<ion-content [fullscreen]="true">
   <div id="container">
-    <ion-header collapse="condense">
-
-      <ion-title size="large">register</ion-title>
-
-  </ion-header>
+    <div id="header">
+      <ion-header collapse="condense">
+        <ion-icon name="chevron-back-outline" id="flecha-atras" [routerLink]="['/home']"></ion-icon>
+        <ion-title size="large" id="titulo">Crea tu cuenta</ion-title>
+      </ion-header>
+    </div>
+    <div id="menu">
+      <form>
+        <input type="text" placeholder="Email" id="mail" >
+        <input type="password" placeholder="Password" id="password">
+      </form>
+    </div>
   </div>
-
 </ion-content>

@@ -1,10 +1,13 @@
 #title{
   justify-content: center;
-  background-color: #1b253b;
+  background-color: rgb(13, 84, 126);
+  padding-top: 50px;
+  color: #cfcfcf;
+
 }
 
 #imag{
-  background-color: #1b253b;
+  background: linear-gradient(to bottom, rgb(13, 84, 126), #1b253b); 
 
 }
 #container {
@@ -18,7 +21,7 @@
 }
 
 #mail{
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 30px;
   width: 350px;
   padding: 8px;
@@ -27,12 +30,13 @@
   border-left: none;
   border-right: none;
   font-size: 20px;
-  color: #333
+  color: #fff; 
 }
 #mail:focus {
   border-color: #66afe9;         /* Color del borde al enfocar */
   box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
   outline: none;             /* Quitar el outline predeterminado */
+  color: #fff;
 }
 #password{
   margin-bottom: 15px;
@@ -43,26 +47,28 @@
   border-left: none;
   border-right: none;
   font-size: 20px;
-  color: #333
+  color: #fff; 
 }
 #password:focus{
   border-color: #66afe9;         /* Color del borde al enfocar */
   box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Sombra al enfocar */
-  outline: none;        
+  outline: none;    
+  color: #fff;    
+}
+#icon-visible{
+  position: absolute;
+  right: 50px;
+  font-size: 29px;
+  color: #666;
 }
 #boton_inicio {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 130px;
+  height: 150px;
 }
-#texto{
-  color: #616161
-}
-#boton_registro {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 110px;
+#footer{
+  color: #616161;
+  margin-bottom: 30px;
 }

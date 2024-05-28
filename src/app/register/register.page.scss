@@ -1,4 +1,33 @@
+
 #container {
-    background-color:  #1b253b;
     height: 100%;
+    background: linear-gradient(to bottom, rgb(13, 84, 126), #1b253b); /* De arriba hacia abajo */
+}
+#titulo {
+    color: #cfcfcf;
+    left: 7px;
+    font-size: 55px;
+    padding-top: 80px;
+}
+#flecha-atras{
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    font-size: 40px;
+}
+#menu{
+    justify-content: center;
+}
+#mail {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 350px;
+    padding: 8px;
+    background-color: #1b253b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+    color: #fff; 
+    
 }

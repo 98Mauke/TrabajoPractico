@@ -13,29 +13,26 @@
         <ion-img id="imag" src="assets/logo.png"/>
     </ion-header>
   </div>
-
-
   <div id="container">
-    <form>
-      <input type="text" placeholder="Email" id="mail">
-      <input type="password" placeholder="Password" id="password">
+    <form [formGroup]="formLogin" (ngSubmit)="login($event)">
+      <input formControlName="email" type="text" placeholder="Email" id="mail" >
+      <input formControlName="password" type="password" placeholder="Password" id="password">
+      <ion-icon name="eye-outline" id="icon-visible"></ion-icon>
+      
       <div id="boton_inicio">
         <ion-button 
           color="primary" 
           size="large" 
           shape="round"
-          [routerLink]="['/inicio']">Iniciar sesion
-        </ion-button>
-      </div>
-      <p id="texto">No tenes una cuenta?</p>
-      <div id="boton_registro">
-        <ion-button 
-          color="primary" 
-          size="large" 
-          shape="round"
-          [routerLink]="['/register']">Registrate
+          type="submit">Iniciar sesion
         </ion-button>
       </div>
     </form>
+    <div id="footer">
+      <p id="texto">¿No tenés una cuenta?</p>
+      <a [routerLink]="['/register']" id="direccion-registro">Registrate</a>
+    </div>
   </div>
 </ion-content>
+
+<!-- añadir que los usuarios puedan agregar favoritos-->
